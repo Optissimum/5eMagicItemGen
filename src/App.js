@@ -25,6 +25,7 @@ class App extends Component {
       .replace("#friendly", Lists.friendly[this.random(Lists.friendly.length)])
       .replace("#damage_type", Lists.damage_type[this.random(Lists.damage_type.length)])
       .replace("#action", Lists.action[this.random(Lists.action.length)])
+      .replace("#save", Lists.save[this.random(Lists.save.length)])
       .replace("#distance", Lists.distance[this.random(Lists.distance.length)])
       .replace("#distance", Lists.distance[this.random(Lists.distance.length)])
       .replace("#duration", Lists.duration[this.random(Lists.duration.length)]);

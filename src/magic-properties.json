@@ -8,7 +8,7 @@
 	],
 	"target": [ "the target is", "all creatures adjacent to the wielder are" ],
 	"friendly": [ "the wielder", "a willing creature within 30ft" ],
-	"distance": [ "10ft", "15ft", "20ft", "30ft", "50ft", "100ft" ],
+	"distance": [ "10ft", "15ft", "20ft", "30ft" ],
 	"damage_type": [
 		"radiant damage",
 		"fire damage",
@@ -23,14 +23,15 @@
 	"duration": [
 		"until the end of their next turn",
 		"until the beginning of their next turn",
-		"until the beginning of the wielders"
+		"until the beginning of the wielders next turn"
 	],
+	"save": [ "8 +", "10 +", "8 + Proficiency Bonus +" ],
 	"property": [
-		"#trigger, #target poisoned",
-		"#trigger, #target blinded",
-		"#trigger, #target deafened",
-		"#trigger, #target knocked prone",
-		"#trigger, #target stunned",
+		"#trigger, #target poisoned (DC #save Con modifier)",
+		"#trigger, #target blinded (DC #save Con modifier)",
+		"#trigger, #target deafened (DC #save Con modifier)",
+		"#trigger, #target knocked prone (DC #save Str modifier)",
+		"#trigger, #target stunned (DC #save Con modifier)",
 		"#trigger, #target take 1d6 #damage_type",
 		"#trigger, the ground underneath #target shattered, becoming difficult terrain",
 		"#trigger, #target pushed #distance away from the wielder by a gust of wind",

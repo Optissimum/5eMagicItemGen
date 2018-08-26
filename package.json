@@ -2,7 +2,7 @@
 	"name": "react-gh-cah",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://optissimum.github.io/5eItems",
+	"homepage": "https://optissimum.github.io/5eMagicItemGenyart ",
 	"dependencies": {
 		"react": "^16.4.2",
 		"react-dom": "^16.4.2",
