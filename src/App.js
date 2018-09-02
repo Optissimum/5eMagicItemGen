@@ -39,9 +39,11 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo"/>
           <h1 className="App-title">Magic item generator</h1>
         </header>
-        <p className="App-intro">{item}
-        </p>
-        <p className="App-intro">{property}</p>
+        <div class="Item-info">
+          <h2 className="App-intro">{item}
+          </h2>
+          <p className="App-description">{property}</p>
+        </div>
       </div>
     );
   }
