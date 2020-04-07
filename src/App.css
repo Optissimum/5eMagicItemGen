@@ -13,7 +13,7 @@
 	height: 100px;
 	padding: 20px;
 	color: white;
-
+	margin-bottom: 1%;
 	 {
 		flex: 1;
 	}
@@ -32,6 +32,32 @@
 .App-desciption {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.App-button {
+	background:#222 ;
+	background-color:#222;
+	border-radius:3px;
+	border:1px solid #222;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #222;
+	margin-bottom: 1%;
+}
+.App-button:hover {
+	background:#222;
+	background-color:#222;
+}
+.App-button:active {
+	position:relative;
+	top:1px;
+}
+
 
 .Item-info {
 	padding-left: 10px;

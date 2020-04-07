@@ -7,7 +7,7 @@
 		"once per long rest, #trigger"
 	],
 	"target": [ "the target is", "all creatures adjacent to the wielder are" ],
-	"friendly": [ "the wielder", "a willing creature within 30ft" ],
+	"friendly": [ "the wielder", "a creature within 30ft" ],
 	"distance": [ 10, 15, 20, 30 ],
 	"damage_type": [
 		"radiant damage",
@@ -27,18 +27,19 @@
 	],
 	"save": [ "8 +", "10 +", "8 + Proficiency Bonus +" ],
 	"property": [
-		"#trigger, #target poisoned DC (#save Con modifier) Con saving throw",
-		"#trigger, #target blinded DC (#save Con modifier) Con saving throw",
-		"#trigger, #target deafened DC (#save Con modifier) Con saving throw",
-		"#trigger, #target knocked prone DC (#save Str modifier) Str saving throw",
-		"#trigger, #target stunned DC (#save Con modifier) Con saving throw",
+		"#trigger, #target poisoned, DC (#save Con modifier), and is contested by a Con saving throw",
+		"#trigger, #target blinded, DC (#save Con modifier), and is contested by a Con saving throw",
+		"#trigger, #target deafened, DC (#save Con modifier), and is contested by a Con saving throw",
+		"#trigger, #target knocked prone, DC (#save Str modifier), and is contested by a Str saving throw",
+		"#trigger, #target stunned, DC (#save Con modifier), and is contested by a Con saving throw",
 		"#trigger, #target take 1d6 #damage_type",
 		"#trigger, the ground underneath #target shattered, becoming difficult terrain",
 		"#trigger, #target pushed #distance away from the wielder by a gust of wind",
-		"#trigger, an arc of magic jumps from the weapon to an enemy of the wielders choice within #distance of it and pulls them #distance towards the wielder",
 		"#trigger, the wielder may summon the weapon to their hand. If it is currently being held, it is a contested Str check",
 		"#trigger, #friendly may use the #action action as a bonus action before the end of their next turn",
-		"#trigger, #friendly may gain advantage on a skill check before the end of their next turn"
+		"#trigger, #friendly may gain advantage on a skill check before the end of their next turn",
+		"#trigger, this weapon deals #damage_type for #duration and counts as a magical weapon",
+		"#trigger, an arc of magic jumps from the weapon to an enemy of the wielders choice within #distance of it and pulls them #distance towards the wielder"		
 	],
 	"action": [ "dash", "dodge", "help", "hide", "use object" ],
 	"weapons": [
